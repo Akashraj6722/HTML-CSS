@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Library</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="p1">
+            <ul>
+                <li> <a href="">HOME</a></li>
+                <li> <a href="">CONTACT</a></li>
+                <li><a href="">ABOUT</a> </li>
+            </ul>
+        </div>
+        <div class="p2">
+            <ul>
+                <li><a href=""> <img src="/img/Insta.jpg " alt="insta image"></a></li>
+                <li><a href=""> <img src="/img/FB.jpg" alt="fb image"></a></li>
+                <li><a href=""> <img src="/img/Wp.jpg " alt="wp image"></a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            padding: 25px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+        }
+
+        .p1 li {
+            display: inline;
+        }
+
+        .p1 a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .p1 a:hover {
+            color: greenyellow;
+            transform: scale(1.05);
+
+        }
+
+        .p2 li {
+            display: inline;
+            left: 0;
+        }
+
+        .p2 img {
+            height: 25px;
+            width: 30px;
+        }
+    </style>
+
+
+    <div class="heading">
+        <center>
+            <h1> Book Worm's Paradise</h1>
+        </center>
+    </div>
+    <style>
+        .heading {
+            color: black;
+            background-color: rgb(250, 250, 250);
+            padding: 20px;
+
+        }
+    </style>
+    <div class="welcome">
+
+        <h3>
+            <center>
+                <marquee behavior="" direction="left">
+                    WELCOME! Buddy
+            </center>
+            </marquee>
+        </h3>
+    </div>
+    <style>
+        .welcome {
+            color: rgb(42, 241, 65);
+            background-color: black;
+
+
+        }
+
+        body {
+            background-image: url(/img/LibraryPage.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    <div class="message">
+        <h4>
+            <center>
+                IF YOU HAVE AN ACCOUNT PLEASE! LOGIN OR SIGN-UP TO CREATE A NEW ACCOUNT
+        </h4>
+        </center>
+    </div>
+
+    <style>
+        .message h4 {
+            margin-top: 6%;
+            margin-left: 22%;
+            width: 57%;
+
+            color: aliceblue;
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+    <div class="link">
+          <div class="signup">
+              <a href="http://127.0.0.1:5500/Library%20APP/SignUpLibrary.html">SIGN-UP</a>
+          </div>
+
+            <div class="login">
+                <a href="http://127.0.0.1:5500/Library%20APP/LoginLibrary.html">LOGIN</a>
+           </div>
+    </div>
+    <style>
+        .link {
+            display:flex;
+            justify-content: center;
+           padding: 5px;
+           margin-top: 50px;
+           gap: 110px;
+        }
+
+        .signup a {
+            text-align: center;
+            width: 50%;
+            padding: 10px;
+            color: aliceblue;
+            font-size: large;
+        
+
+        }
+
+         .signup a:hover {
+            color: greenyellow;
+            transform: scaleX(4);
+        }
+       
+        .login a {
+            text-align: center;
+            width: 50%;
+            padding: 10px;
+            color: aliceblue;
+            font-size: large;
+
+            
+
+        }
+
+         .login a:hover {
+            color: greenyellow;
+            /* font-weight: bolder; */
+        }
+
+      
+    </style>
+
+
+</body>

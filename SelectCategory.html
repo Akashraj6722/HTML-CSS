@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+    <title> Select Category</title>
+</head>
+<body>
+<div  class="row1">
+  <div  class="FANTASY-Card" >
+    <div class="FANTASY-Inner" >
+       <div class="FANTASY-Front">
+         <img src="/img/fantasy.jpg" alt="FANTASY-img" style="width:300px;height: 150px; border-radius: 25px;">
+         
+        
+           </div>
+      <div class="FANTASY-Back">
+        <h1>FANTASY</h1>
+        <a href="https://www.goodreads.com/genres/fantasy">Click here</a>
+      </div>
+   </div>
+  </div>
+
+ <div class="HORROR-Card">
+    <div class="HORROR-Inner" >
+         <div class="HORROR-Front">
+           <img src="/img/Horror.jpg" alt="HORROR-img" style="width:300px;height: 150px; border-radius: 25px;">
+           
+          
+             </div>
+        <div class="HORROR-Back">
+          <h1>HORROR</h1>
+          <a href="https://www.goodreads.com/genres/horror">Click here</a>
+        </div>
+   </div>
+  </div>
+  <div class="COMICS-Card">
+    <div class="COMICS-Inner" >
+         <div class="COMICS-Front">
+           <img src="/img/comics.jpg" alt="COMICS-img" style="width:300px;height: 150px; border-radius: 25px;">
+           
+          
+             </div>
+        <div class="COMICS-Back">
+          <h1>COMICS</h1>
+          <a href="https://www.goodreads.com/genres/comics">Click here</a>
+        </div>
+   </div>
+  </div>
+  
+</div>   
+
+
+  <!-- <h1 style="margin-top: 5%;"> <center>
+       PLACE the CURSOR on IMAGE to SELECT
+      </center>
+  </h1> -->
+
+<div class="row2">
+  <div class="HISTORY-Card">
+    <div class="HISTORY-Inner" >
+         <div class="HISTORY-Front">
+           <img src="/img/History.jpg" alt="img" style="width:300px;height: 150px; border-radius: 25px;">
+           
+          
+             </div>
+        <div class="HISTORY-Back">
+          <h1>HISTORY</h1>
+          <a href="https://www.goodreads.com/list/show/1362.Best_History_Books_">Click here</a>
+        </div>
+   </div>
+  </div>
+  <div class="NON-FICTION-Card">
+    <div class="NON-FICTION-Inner" >
+         <div class="NON-FICTION-Front">
+           <img src="/img/Non-Fiction.jpg" alt="img" style="width:300px;height: 150px; border-radius: 25px;">
+           
+          
+             </div>
+        <div class="NON-FICTION-Back">
+          <h1>NON-FICTION</h1>
+          <a href="https://www.goodreads.com/genres/non-fiction">Click here</a>
+        </div>
+   </div>
+  </div>
+
+</div>
+<footer>
+   Copyrights © 2012 goodreads | All rights reserved .
+</footer>
+</body>
+<style>
+
+    body{
+        
+        background-image: url(/img/Select3.jpg);
+        min-height: 90vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .FANTASY-Card {
+      display: flex;
+        border-radius: 25px;
+        /* background-color: transparent; */
+        width: 300px;
+        height: 150px;
+        perspective: 1000px;
+        margin-top: 5%;
+        
+        box-shadow:5px 5px rgb(4, 38, 21) ;
+        
+
+    }
+    .HORROR-Card , .COMICS-Card , .HISTORY-Card , .NON-FICTION-Card{
+       
+        border-radius: 25px;
+        /* background-color: transparent; */
+        width: 300px;
+        height: 150px;
+        perspective: 1000px;
+        margin-top: 5%;
+        margin-left: 10%;
+        box-shadow:5px 5px rgb(4, 38, 21) ;
+        
+    }
+    .FANTASY-Inner,.HORROR-Inner,.COMICS-Inner,.HISTORY-Inner,.NON-FICTION-Inner{
+        width: 100%;
+        /* border-radius: 25px; */
+        height: 100%;
+        transition: 1s;
+        transform-style: preserve-3d;
+    }
+    .FANTASY-Card:hover .FANTASY-Inner,.HORROR-Card:hover .HORROR-Inner, .COMICS-Card:hover .COMICS-Inner, .HISTORY-Card:hover .HISTORY-Inner, .NON-FICTION-Card:hover .NON-FICTION-Inner{
+        transform: rotateY(180deg);
+    }
+    .FANTASY-Front,.FANTASY-Back,.HORROR-Front,.HORROR-Back,.COMICS-Front,.COMICS-Back,.HISTORY-Front,.HISTORY-Back,.NON-FICTION-Front,.NON-FICTION-Back{
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+
+    }
+    .FANTASY-Back{
+        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        background-image:repeating-linear-gradient( #1BFFFF,#4d52cb);
+         /* background-color: rgb(22, 180, 212); */
+          text-align: center;
+        /* color:blue; */
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+
+    }
+    .HORROR-Back{
+        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        background-image:  repeating-linear-gradient(rgb(247, 21, 21),#ffb339);
+
+
+         /* background-color: rgb(22, 180, 212); */
+          text-align: center;
+        /* color:blue; */
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        
+
+    }
+    .COMICS-Back{
+        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        background-image: repeating-linear-gradient(#3cffce , #ff9e9e);
+         background-color: rgb(22, 180, 212);
+          text-align: center;
+        /* color:blue; */
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+
+    }
+    .HISTORY-Back{
+        font-family:Arial, Helvetica, sans-serif;
+        color: rgb(0, 0, 0);
+        background-image: linear-gradient(#0bbc5e,  #FCEE21);
+         /* background-color: rgb(22, 180, 212); */
+          text-align: center;
+        /* color:blue; */
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+
+    }
+    .NON-FICTION-Back{
+        font-family:Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(#552ef1,#e89bb1);
+         /* background-color: rgb(22, 180, 212); */
+          text-align: center;
+        /* color:blue; */
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+
+    }
+    a:hover{
+        color: rgb(4, 76, 15);
+        font-weight: bolder;
+    }
+    .row1{
+      display: flex;
+      justify-content: center;
+    }
+    .row2{
+      margin-left: 10%;
+      margin-top: 7%;
+      display: flex;
+
+    }
+    footer{
+      margin-top: 3%;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 10px;
+      background-color: rgb(41, 38, 38);
+      color: white;
+    }
+    
+   
+  
+    
+    
+
+</style>
+
+    
+      

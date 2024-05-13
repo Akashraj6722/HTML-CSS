@@ -1,0 +1,20 @@
+body{
+
+
+    background-image: url(/img/LibraryPage.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+
+
+
