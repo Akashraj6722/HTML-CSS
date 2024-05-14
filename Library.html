@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Library</title>
-</head>
 
+    <title>Library</title>
+
+    <link rel="stylesheet" type="image/jpg" href="/img/load.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    
+    
+</head>
 <body>
 
     <nav class="navbar">
-        <div class="p1">
+        <div class="l1">
             <ul>
                 <li> <a href="">HOME</a></li>
                 <li> <a href="">CONTACT</a></li>
                 <li><a href="">ABOUT</a> </li>
             </ul>
         </div>
-        <div class="p2">
-            <ul>
-                <li><a href=""> <img src="/img/Insta.jpg " alt="insta image"></a></li>
-                <li><a href=""> <img src="/img/FB.jpg" alt="fb image"></a></li>
-                <li><a href=""> <img src="/img/Wp.jpg " alt="wp image"></a></li>
-
-            </ul>
-        </div>
+        
     </nav>
     <style>
         * {
@@ -38,31 +37,24 @@
             justify-content: space-between;
             background-color: black;
         }
+        .l1 ul{
+            display: flex;
+            gap: 40px;
 
-        .p1 li {
-            display: inline;
         }
 
-        .p1 a {
+        .l1 a {
             color: aliceblue;
             text-decoration: none;
         }
 
-        .p1 a:hover {
+        .l1 a:hover {
             color: greenyellow;
             transform: scale(1.05);
 
         }
 
-        .p2 li {
-            display: inline;
-            left: 0;
-        }
-
-        .p2 img {
-            height: 25px;
-            width: 30px;
-        }
+       
     </style>
 
 
@@ -99,8 +91,10 @@
 
         body {
             background-image: url(/img/LibraryPage.jpg);
-            background-position: center;
+            /* background-position: center; */
             background-size: cover;
+            
+            
         }
     </style>
     <div class="message">
@@ -132,7 +126,60 @@
                 <a href="http://127.0.0.1:5500/Library%20APP/LoginLibrary.html">LOGIN</a>
            </div>
     </div>
-    <style>
+
+    <footer>
+        <h4> <center>Copyrights &copy; 2012 Bookworm'sParadise | All rights reserved.  <br><br></h4></center>
+         <div class="row">
+              <div class="leftfoot">
+                    <a href=""><i class="fas fa-phone-square-alt" style="font-size: x-large;"></i></a><p><b>+91</b>6345789645</p> <br>
+                    <a  href=""><i class="fas fa-envelope"></i></a>bookwormparadise@gmail.com
+              </div>
+     
+               <div class="rightfoot">
+                    <h5 style="color: rgb(64, 16, 122);"> <center>OUR LOCATIONS</h5></center> <br>
+     
+                    <a href="https://maps.app.goo.gl/8NJQDncn3Td4AkpH8"><i class="fas fa-map-marker-alt"></i>9th St Ext, Coimbatore, Tamil Nadu 641012</a><br><br>
+                    <a href="https://maps.app.goo.gl/57phayrkRnRgNVj99"><i class="fas fa-map-marker-alt"></i>219, South Veli Street, Madurai, Tamil Nadu 625001</a><br>
+                    <a href=""></a>
+               </div>
+          </div>
+   </footer>
+<style>
+     
+     
+    .row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+footer{
+    
+      margin-top: 200px;
+      font-family: Arial, Helvetica, sans-serif;
+      /* text-align: center; */
+      padding: 5px;
+      background-color: rgb(167, 194, 167);
+      color: rgb(0, 0, 0);
+    }
+    
+
+  .leftfoot{
+    /* display:flex ; */
+    /* flex-direction: column; */
+    width: 100px;
+    color: black;
+    /* justify-content: start; */
+    
+    /* justify-content: space-between; */
+  }
+  .rightfoot a{
+    margin-left:0 ;
+    color: black;
+    
+  }
+  .rightfoot a:hover{
+    color: rgb(149, 46, 196);
+  }
         .link {
             display:flex;
             justify-content: center;

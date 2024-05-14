@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <head>
     <title> Select Category</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
 <div  class="row1">
@@ -12,13 +14,13 @@
         
            </div>
       <div class="FANTASY-Back">
-        <h1>FANTASY</h1>
-        <a href="https://www.goodreads.com/genres/fantasy">Click here</a>
+        <h1> <br>FANTASY</h1>
+        <a href="http://127.0.0.1:5500/Library%20APP/Fantasy.html">Click here</a>
       </div>
    </div>
   </div>
 
- <div class="HORROR-Card">
+ <div  class="HORROR-Card" >
     <div class="HORROR-Inner" >
          <div class="HORROR-Front">
            <img src="/img/Horror.jpg" alt="HORROR-img" style="width:300px;height: 150px; border-radius: 25px;">
@@ -26,8 +28,8 @@
           
              </div>
         <div class="HORROR-Back">
-          <h1>HORROR</h1>
-          <a href="https://www.goodreads.com/genres/horror">Click here</a>
+          <h1> <br>HORROR</h1>
+          <a href="http://127.0.0.1:5500/Library%20APP/Horror.html">Click here</a>
         </div>
    </div>
   </div>
@@ -39,8 +41,8 @@
           
              </div>
         <div class="COMICS-Back">
-          <h1>COMICS</h1>
-          <a href="https://www.goodreads.com/genres/comics">Click here</a>
+          <h1> <br>COMICS</h1>
+          <a href="http://127.0.0.1:5500/Library%20APP/comics.html">Click here</a>
         </div>
    </div>
   </div>
@@ -48,11 +50,7 @@
 </div>   
 
 
-  <!-- <h1 style="margin-top: 5%;"> <center>
-       PLACE the CURSOR on IMAGE to SELECT
-      </center>
-  </h1> -->
-
+  
 <div class="row2">
   <div class="HISTORY-Card">
     <div class="HISTORY-Inner" >
@@ -62,8 +60,8 @@
           
              </div>
         <div class="HISTORY-Back">
-          <h1>HISTORY</h1>
-          <a href="https://www.goodreads.com/list/show/1362.Best_History_Books_">Click here</a>
+          <h1> <br>HISTORY</h1>
+          <a href="http://127.0.0.1:5500/Library%20APP/history.html">Click here</a>
         </div>
    </div>
   </div>
@@ -75,18 +73,65 @@
           
              </div>
         <div class="NON-FICTION-Back">
-          <h1>NON-FICTION</h1>
-          <a href="https://www.goodreads.com/genres/non-fiction">Click here</a>
+          <h1> <br>NON-FICTION</h1>
+          <a href="http://127.0.0.1:5500/Library%20APP/Non%20fiction%20books.html">Click here</a>
         </div>
    </div>
   </div>
 
 </div>
 <footer>
-   Copyrights © 2012 goodreads | All rights reserved .
+   <h4> <center>Copyrights &copy; 2012 Bookworm'sParadise | All rights reserved.  <br><br></h4></center>
+    <div class="row">
+         <div class="leftfoot">
+               <a href=""><i class="fas fa-phone-square-alt" style="font-size: x-large;"></i></a><p><b>+91</b>6345789645</p> <br>
+               <a  href=""><i class="fas fa-envelope"></i></a>bookwormparadise@gmail.com
+         </div>
+
+          <div class="rightfoot">
+               <h5> <center>OUR LOCATIONS</h5></center> <br>
+
+               <a href="https://maps.app.goo.gl/8NJQDncn3Td4AkpH8"><i class="fas fa-map-marker-alt"></i>9th St Ext, Coimbatore, Tamil Nadu 641012</a><br><br>
+               <a href="https://maps.app.goo.gl/57phayrkRnRgNVj99"><i class="fas fa-map-marker-alt"></i>219, South Veli Street, Madurai, Tamil Nadu 625001</a><br>
+               <a href=""></a>
+          </div>
+     </div>
 </footer>
 </body>
 <style>
+  .row{
+    display: flex;
+    justify-content: space-between;
+  }
+   footer{
+      margin-top: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      /* text-align: center; */
+      padding: 10px;
+      background-color: rgb(167, 194, 167);
+      color: rgb(0, 0, 0);
+    }
+    
+
+  .leftfoot{
+    /* display:flex ; */
+    /* flex-direction: column; */
+    width: 100px;
+    /* justify-content: start; */
+    
+    /* justify-content: space-between; */
+  }
+  .rightfoot{
+    margin-left:0 ;
+    /* background-color: #552ef1; */
+  }
+
+  
+* {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
 
     body{
         
@@ -148,6 +193,8 @@
         /* color:blue; */
         backface-visibility: hidden;
         transform: rotateY(180deg);
+        /* text-align: justify; */
+        
 
     }
     .HORROR-Back{
@@ -196,9 +243,12 @@
         transform: rotateY(180deg);
 
     }
+    a{
+      color: black;
+    }
     a:hover{
-        color: rgb(4, 76, 15);
-        font-weight: bolder;
+        color: red;
+        /* font-weight: bolder; */
     }
     .row1{
       display: flex;
@@ -210,15 +260,7 @@
       display: flex;
 
     }
-    footer{
-      margin-top: 3%;
-      font-family: Arial, Helvetica, sans-serif;
-      text-align: center;
-      padding: 10px;
-      background-color: rgb(41, 38, 38);
-      color: white;
-    }
-    
+   
    
   
     
